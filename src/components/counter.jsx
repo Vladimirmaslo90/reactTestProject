@@ -35,11 +35,10 @@ class Counter extends Component {
         {/* <span style {{ fontSize: 30 }} className="badge badge-primary m-2">{this.formatCount()} </span> */}
         <span className={this.getBadgeClasses()}>{this.formatCount()} </span>
         <button
-          onClick={() => this.handleIncrement({ id: 1 })}
+          onClick={this.handleIncrement}
           className="bth btn-secondary btn-sm"
         >
-          {" "}
-          Increment{" "}
+          Increment
         </button>
         {/* {this.state.tags.length === 0 && "Please create a new tag!"}
         {this.renderTags()} */}
